@@ -32,3 +32,17 @@ ulEl.insertAdjacentHTML('beforeend', images.map(el => makeLiMarkup(el)).join('')
 // ulEl.append(...arrayOfLiEl);
 // document.body.append(ulEl);
 // console.log(ulEl);
+
+const firstImgEl = document.querySelector('[alt="White and Black Long Fur Cat"]');
+const lastImgEl = document.querySelector('[alt="Group of Horses Running"]');
+
+firstImgEl.addEventListener('mouseenter', onMouseEnter);
+firstImgEl.addEventListener('mouseleave', onMouseLeave);
+
+function onMouseEnter() {
+  lastImgEl.style.zIndex = -1;
+}
+
+function onMouseLeave() {
+  lastImgEl.style.zIndex = 0;
+}
