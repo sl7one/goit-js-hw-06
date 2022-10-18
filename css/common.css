@@ -31,17 +31,25 @@ li {
   list-style: none;
 }
 .image {
+  position: relative;
   width: 250px;
   border-radius: 10px;
+  transform: scale(1);
+  transition: transform;
+  transition-duration: 550ms;
+  transition-timing-function: ease-out;
+}
+
+.image:hover {
+  z-index: 1;
+  transform: scale(1.1);
 }
 
 li:nth-child(2) .image {
-  position: relative;
   left: -100px;
   top: 50px;
 }
 li:nth-child(3) .image {
-  position: relative;
   left: -200px;
   top: 120px;
 }
