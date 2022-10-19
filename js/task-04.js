@@ -1,5 +1,6 @@
 const btnElDecrements = document.querySelector('[data-action = "decrement"]');
 const btnElIncrement = document.querySelector('[data-action = "increment"]');
+const spanEl = document.querySelector('[id="value"]');
 
 let counterValue = 0;
 
